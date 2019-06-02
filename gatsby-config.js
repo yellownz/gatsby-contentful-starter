@@ -9,6 +9,7 @@ try {
 contentfulConfig = {
   spaceId: process.env.CONTENTFUL_SPACE_ID || contentfulConfig.spaceId,
   accessToken: process.env.CONTENTFUL_DELIVERY_TOKEN || contentfulConfig.accessToken,
+  host: process.env.CONTENTFUL_HOST
 }
 
 const { spaceId, accessToken } = contentfulConfig
