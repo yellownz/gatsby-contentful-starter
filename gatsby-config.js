@@ -33,6 +33,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: [{
+          userAgent: '*',
+          disallow: '/',
+        }],
+      },
+    },
   ],
 }
